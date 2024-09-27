@@ -28,15 +28,23 @@ public class TP1EX3 {
     System.out.println("\n Entrer le nombre :");
     nb=sc.nextInt(); // On demande a sc de donner le prochain entier
     
-        if ( a == nb ) {
-            System.out.println(" gagné");
-        }
+    
+        while ( a != nb ) {
+            System.out.println("\n Entrer le nombre :");
+            nb=sc.nextInt();
             
-        if (a > nb) {
-            System.out.println("  trop grand");
+            if (a > nb) {
+                System.out.println("  trop grand");
         }
-        if (a < nb) {
-            System.out.println("  trop petit");
+            if (a < nb) {
+                System.out.println("  trop petit");
+        }
+        }
+        
+        System.out.println(" gagner");
+         
+    
+        
         }
     }
 }
