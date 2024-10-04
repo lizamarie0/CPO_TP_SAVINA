@@ -24,29 +24,84 @@ public class TP1EX3 {
             
     
         int nb = 0;
+        int nbtentative = 0;
+        int niveaujoueur = 0;
+        int facile = 0;
+        int moyen = 0;
+        int difficile = 0;
     Scanner sc = new Scanner(System.in);
+    System.out.println("\n Quel niveau es tu ?" + "facile; " + "moyen; " + "difficile; ");
+    niveaujoueur = sc.nextInt();
+        
+    
     System.out.println("\n Entrer le nombre :");
     nb=sc.nextInt(); // On demande a sc de donner le prochain entier
     
+           
     
-        while ( a != nb ) {
-            System.out.println("\n Entrer le nombre :");
-            nb=sc.nextInt();
+        if (niveaujoueur == facile) {
             
-            if (a > nb) {
-                System.out.println("  trop grand");
+            while ( a != nb && nbtentative < 100 ) {
+                System.out.println("\n Entrer le nombre :");
+                nb=sc.nextInt();
+                nbtentative += 1;
+            
+                if (a > nb) {
+                    System.out.println("  trop grand");
         }
-            if (a < nb) {
-                System.out.println("  trop petit");
+                if (a < nb) {
+                    System.out.println("  trop petit");
+            System.out.println("\n perdu!");
         }
-        }
+        }   
         
-        System.out.println(" gagner");
+        System.out.println(" gagner et " + "le nombre de tentative est de : " + nbtentative);
          
     
         
         }
+        
+                if (niveaujoueur == moyen) {
+            
+            while ( a != nb && nbtentative < 10 ) {
+                System.out.println("\n Entrer le nombre :");
+                nb=sc.nextInt();
+                nbtentative += 1;
+            
+                if (a > nb) {
+                    System.out.println("  trop grand");
+        }
+                if (a < nb) {
+                    System.out.println("  trop petit");
+            System.out.println("\n perdu!");
+        }
+        }   
+        
+        System.out.println(" gagner et " + "le nombre de tentative est de : " + nbtentative);
+        
+        
+
+    }
+                
+                if (niveaujoueur == difficile) {
+            
+            while ( a != nb && nbtentative < 3 ) {
+                System.out.println("\n Entrer le nombre :");
+                nb=sc.nextInt();
+                nbtentative += 1;
+            
+                if (a > nb) {
+                    System.out.println("  trop grand");
+        }
+                if (a < nb) {
+                    System.out.println("  trop petit");
+            System.out.println("\n perdu!");
+        }
+        }   
+        
+        System.out.println(" gagner et " + "le nombre de tentative est de : " + nbtentative);
+}
     }
 }
-    
+
 
