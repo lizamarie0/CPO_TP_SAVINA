@@ -14,19 +14,35 @@ public class TP2_biere_savina {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        BouteilleBiere uneBiere = new BouteilleBiere() ;
-
-    uneBiere.Nom = "Cuvée des trolls";
-    uneBiere.degreAlcool = 7.0 ;
-    uneBiere.brasserie = "Dubuisson";
+ 
+    BouteilleBiere uneBiere = new BouteilleBiere("Cuvée des trolls", (float) 7.0,"Dubuisson") ;
     uneBiere.lireEtiquette();
-
-        
-BouteilleBiere secondebiere = new BouteilleBiere() ;
-    secondebiere.Nom = "Leffe";
-    secondebiere.degreAlcool = 6.6 ; 
-    secondebiere.brasserie = "Abbaye de Leffe";
-    secondebiere.lireEtiquette();
-    }
     
+    
+    BouteilleBiere secondebiere = new BouteilleBiere("Leffe", (float) 6.6,"Abbaye de Leffe") ;
+    secondebiere.lireEtiquette();
+
+    
+    BouteilleBiere troisiemebiere = new BouteilleBiere("despe", (float) 6.4,"pourquoi pas") ;
+    troisiemebiere.lireEtiquette();
+    
+   
+    BouteilleBiere quatiemebiere = new BouteilleBiere("corona", (float) 6.3,"JH") ;
+    quatiemebiere.lireEtiquette();
+    
+    BouteilleBiere cinquiemebiere = new BouteilleBiere("la blonde", (float) 6.8,"La cabane") ;
+    cinquiemebiere.lireEtiquette();
+
+}
+    BouteilleBiere decapsuler = new BouteilleBiere;
+    
+        boolean decapsuler
+        if (boolean) {
+            System.out.println("La bière est maintenant ouverte.");
+            return true;
+        } else {
+            System.out.println("Erreur : bière déjà ouverte.");
+            return false;
+        }
+    }
 }
