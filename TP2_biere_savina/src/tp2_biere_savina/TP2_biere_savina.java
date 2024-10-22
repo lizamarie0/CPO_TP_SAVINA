@@ -33,16 +33,20 @@ public class TP2_biere_savina {
     BouteilleBiere cinquiemebiere = new BouteilleBiere("la blonde", (float) 6.8,"La cabane") ;
     cinquiemebiere.lireEtiquette();
 
-}
-    BouteilleBiere decapsuler = new BouteilleBiere;
+    }
+
     
-        boolean decapsuler
-        if (boolean) {
+    
+        public boolean Decapsuler() {
+        if (!ouverte) {
+            ouverte = true;
             System.out.println("La bière est maintenant ouverte.");
-            return true;
+            return true;  // Retourne vrai si la bière a été décapsulée
         } else {
             System.out.println("Erreur : bière déjà ouverte.");
-            return false;
+            return false;  // Retourne faux si la bière était déjà ouverte
         }
     }
-}
+  
+        }
+    
